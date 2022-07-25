@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admins",
+  "info": {
+    "singularName": "admin",
+    "pluralName": "admins",
+    "displayName": "Admin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "datetime",
+      "default": "2022-07-31T16:00:00.000Z"
+    },
+    "end": {
+      "type": "datetime",
+      "default": "2022-07-31T16:00:00.000Z"
+    },
+    "user_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "room_name": {
+      "type": "string"
+    },
+    "equip_name": {
+      "type": "string"
+    },
+    "room_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "approve": {
+      "type": "boolean",
+      "default": true
+    },
+    "deny": {
+      "type": "boolean",
+      "default": false
+    },
+    "reasons": {
+      "type": "text"
+    },
+    "tenant_name": {
+      "type": "string"
+    },
+    "tenant_gg": {
+      "type": "string"
+    },
+    "tenant_member_since": {
+      "type": "date"
+    },
+    "room_img_tenant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tenant.tenant",
+      "mappedBy": "room_img"
+    },
+    "equip_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

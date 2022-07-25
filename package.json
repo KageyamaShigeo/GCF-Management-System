@@ -1,0 +1,11 @@
+{
+  "name": "GCF",
+  "version": "1.0.0",
+  "description": "Greenhills Christian Fellowship Management System",
+  "main": "index.js",
+  "author": "Peralta, Daniel Aris R. | Dela Cruz, Deniel B. | Castor, Charisse Iliana V.",
+  "license": "MIT",
+  "dependencies": {
+    "@offset-dev/strapi-calendar": "^0.0.7"
+  }
+}

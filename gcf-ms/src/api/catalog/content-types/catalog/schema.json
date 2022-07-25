@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogs",
+  "info": {
+    "singularName": "catalog",
+    "pluralName": "catalogs",
+    "displayName": "Catalog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_name": {
+      "type": "string"
+    },
+    "room_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "room_capacity": {
+      "type": "string"
+    },
+    "equip_name": {
+      "type": "string"
+    },
+    "equip_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "equip_desc": {
+      "type": "text"
+    }
+  }
+}
